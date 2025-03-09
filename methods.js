@@ -131,3 +131,73 @@ const usersmap = [
 const newusersmap = usersmap.pop()
 
 console.log(usersmap)
+
+////12. .push() method in JavaScript is used to add one or more elements to the end of an array 
+// and returns the new length of the array.
+
+const pushmethod = [1, 2, 3]
+let newpushmethod = pushmethod.push(4, 5, 6)
+
+console.log(pushmethod)
+console.log(newpushmethod)
+
+
+////13. .reduce() method in JavaScript is used to reduce an array to a single value 
+// by executing a callback function on each element.
+
+let reduceNumbers = [1, 2, 3, 4, 5, 6]
+
+//summing an array
+let reduceNumberSum = reduceNumbers.reduce((acc, curr) => acc + curr, 0);
+
+console.log(reduceNumberSum)
+
+
+////14. .slice() method in JavaScript is used to extract a portion of an array or string 
+// without modifying the original array.
+
+let sNumbers = [10, 20, 30, 40, 50]
+
+let sliceNumbers = sNumbers.slice(1, 4)
+
+console.log(sliceNumbers)
+console.log(sNumbers)
+
+
+////15. .sort() method in JavaScript is used to sort the elements of an array in place and returns the sorted array.
+
+//sorting an Array of Objects
+
+let sUsers = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 22 },
+    { name: "Charlie", age: 30 }
+];
+
+//sort by the age, ascending
+
+let sortUsers = sUsers.sort((a, b) => a.age - b.age)
+
+console.log(sortUsers)
+
+
+////16. .splice() method in JavaScript is used to add, remove, or replace elements in an array. 
+// It modifies the original array and returns an array of the removed elements.
+
+// Replacing elements
+
+let sFruits = ['apple', 'banana', 'cherry']
+
+let spliceFuits = sFruits.splice(1, 1, 'plum')
+
+console.log(spliceFuits)
+console.log(sFruits)
+
+////17. .toString() method in JavaScript is used to convert an array, 
+// object, or other data types into a string.
+
+let sNum = 123
+
+console.log(typeof (sNum.toString()))
+console.log((150 - 80).toString())
+
