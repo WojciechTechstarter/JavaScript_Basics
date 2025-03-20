@@ -190,6 +190,8 @@ let sFruits = ['apple', 'banana', 'cherry']
 
 let spliceFuits = sFruits.splice(1, 1, 'plum')
 
+sFruits.splice
+
 console.log(spliceFuits)
 console.log(sFruits)
 
